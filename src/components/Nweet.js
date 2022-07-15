@@ -68,8 +68,12 @@ export default function Nweet({img, text, isOwner, id}){
                   )}
                   {isOwner && (
                       <div className="nweet__actions">
-                          <span onClick={onDelete}><FontAwesomeIcon icon={faTrash}/></span>
-                          <span onClick={toggleEdit}><FontAwesomeIcon icon={faPencilAlt}/></span>
+                          <span onClick={onDelete}>
+                            <FontAwesomeIcon icon={faTrash}/>
+                          </span>
+                          <span onClick={toggleEdit}>
+                            <FontAwesomeIcon icon={faPencilAlt}/>
+                          </span>
                       </div>
                   )}
                 </>
